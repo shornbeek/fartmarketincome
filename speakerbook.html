@@ -1,0 +1,417 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+  
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+crossorigin="anonymous">
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <title>Speakerbook Pharma CRM. Leading RX Analytics. Healthcare Market Insights. </title>
+
+
+    <style>
+
+           .navbar-brand {
+            width: 250px;
+    }
+
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+            color: black;
+         }
+         h4 {
+            font-weight: 200;
+            padding-bottom: 20px;
+         }
+         .h2class {
+             padding-bottom: 30px;
+         }
+         p {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+         }
+        .container1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+             
+        }
+         .container2 {
+            float: left;
+            padding-right: 15px;
+            width: 100%;
+            max-width: 70px;  
+        }
+         .container3 {
+            display: block;
+            padding-left: 5%;
+            padding-right: 5%;
+            width: 100%;
+            max-width: 700px;  
+        }
+           .container5 {
+            display: block;
+            padding-left: 5%;
+            padding-right: 5%;
+            width: 100%;
+            max-width: 500px;  
+        }
+        .padding {
+            padding: 20px 20px 0 20px;
+        }
+        .textgrade {
+            font-size: 30px;
+            font-weight: bolder;
+            background: -webkit-linear-gradient(rgb(84, 176, 230), rgb(34, 147, 240));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* padding: 10px 5% 10px 5%; */
+        }
+        .atagbut {
+            background-color: rgb(99, 204, 236);
+            border: none;
+            color: white;
+            padding: 10px 70px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 12px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        .testfont {
+            font-size: 12px;
+            color: gray;
+        }
+         .testfont1 {
+            font-size: 12px;
+            color: gray;
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+        .talk {
+            padding-top: 30px;
+        }
+
+        .w-100 {
+            height: 50%;
+        }
+
+        .video-containeriframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+   .navbar-toggler {
+            border: none;
+            outline: none;
+        }
+
+/* #container
+{
+    height:2000px;    
+} */
+
+#container DIV
+{ 
+    margin:10%; 
+    /* padding:50px;  */
+    background-color:rgb(255, 255, 255); 
+}
+
+.hideme
+{
+    opacity:0;
+}
+
+.card-img-top {
+    max-width: 900px;
+    /* min-width: 400px; */
+}
+
+.card-img-top4 {
+    max-width: 150px;
+
+}
+
+      .col-4 {
+
+font-size: 11px;
+padding-top: 20px;
+
+}
+
+.farter {
+    font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            color: black;
+}
+
+    </style>
+
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light">
+        <a href="index.html"> <img class="navbar-brand" src="images/stocks.png" alt="Card image cap"></a>
+
+         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+       
+         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+             <li class="nav-item active">
+               <a class="nav-link" href="speakerbook.html">Portfolio</a>
+             </li>
+             <!-- <!-- <li class="nav-item">
+                 <a class="nav-link" href="Analytics.html">Analytics</a>
+               </li> -->
+             <li class="nav-item">
+                 <a class="nav-link" href="market.html">Resources</a>
+               </li>
+             <li class="nav-item">
+               <a class="nav-link" href="blog.html">Blog</a>
+             </li>
+           </ul>
+         </div>
+       </nav>
+
+              <center>
+                    <!-- <img class="maxed card-img-top" src="images/slide2.png" alt="Card image cap"> -->
+                    <!-- <h4 class="padding textgrade">Market Intel</h4> -->
+                    <h4 class="padding textgrade">Competitive Insights   </h4>
+        
+
+                    <!-- <h1 class="h2class textgrade">Market Intel  </h1>-->
+
+
+                    <button type="button" class="btn btn-primary atagbut" data-toggle="modal" data-target="#exampleModal">
+                            Contact Us
+                          </button>
+           </center>
+        
+       
+ 
+        
+            <div>
+
+                    
+
+
+                <script>
+                $(function(){  // $(document).ready shorthand
+                    $('.monster').fadeIn('slow');
+                  });
+                  
+                  $(document).ready(function() {
+                      
+                      /* Every time the window is scrolled ... */
+                      $(window).scroll( function(){
+                      
+                          /* Check the location of each desired element */
+                          $('.hideme').each( function(i){
+                              
+                              var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                              var bottom_of_window = $(window).scrollTop() + $(window).height();
+                              
+                              /* If the object is completely visible in the window, fade it it */
+                              if( bottom_of_window > bottom_of_object ){
+                                  
+                                  $(this).animate({'opacity':'1'},1500);
+                                      
+                              }
+                              
+                          }); 
+                      
+                      });
+                      
+                  });
+
+</script>
+
+
+
+    <div class="container">
+
+
+            <!-- <div class="video-container">
+                    <iframe src="https://samplestockportfolio.blogspot.com/"  allowfullscreen="" frameborder="0" class="video-containeriframe">
+                    </iframe>
+                </div> -->
+
+
+            <!-- <iframe width="100%" frameborder="0" src="https://uptempogroup.blogspot.com/" height="2000px"></iframe> -->
+
+            
+
+
+
+    </div>
+
+
+
+    <div class="container">
+            <div class="row">
+              <div class="col-4">
+              <center>     <a href="speakerbook.html">
+                            <img class="card-img-top card-img-top4" src="images/app_sb.png" alt="HTML tutorial" >
+                          </a></center> 
+                <!-- <center>  <a href="speakerbook.html">SpeakerBook</a></center> -->
+              </div>
+              <div class="col-4">
+                 <center> <a href="Analytics.html">
+                            <img class="card-img-top card-img-top4" src="images/app_g.png" alt="HTML tutorial" >
+                          </a></center>  
+                <!-- <center> <a href="Analytics.html">G-BluePrint</a></center> -->
+                </div>
+              <div class="col-4">
+
+              <center>    <a href="market.html">
+                            <img class="card-img-top card-img-top4" src="images/app_mt.png" alt="HTML tutorial" >
+                          </a></center>  
+               <!-- <center> <a href="market.html"> Market Intel</a></center> -->
+                </div>
+            </div>
+          </div>
+
+
+          <center>
+                <button type="button" class="btn btn-primary atagbut" data-toggle="modal" data-target="#exampleModal">
+                        Contact Us
+                      </button>
+         </center>
+
+  
+
+    <img class="container1" src="images/footer.png" alt="footer">
+
+</body>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                                <a href="index.html"> <img class="navbar-brand" src="images/logo3.png" alt="Card image cap"></a>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+    <!-- 
+                            <form action="https://docs.google.com/forms/d/e/1FAIpQLSfPYCl4c4FmSyVWsD2Kout4_lbxA6LBHiDGvtB-XrRp22tD_A/formResponse" target="_self"
+                                id="bootstrapForm" method="POST"> -->
+    
+                                <script type="text/javascript">var submitted=false;</script>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"onload="if(submitted) {window.location='contact.html';}"></iframe>
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLSfPYCl4c4FmSyVWsD2Kout4_lbxA6LBHiDGvtB-XrRp22tD_A/formResponse" method="post" target="hidden_iframe"onsubmit="submitted=true;">
+    
+                                <!-- <fieldset>
+                                    <h2>Contact Information
+                                        <br>
+                                        <small></small>
+                                    </h2>
+                                </fieldset> -->
+    
+                                <h4 class="modal-title" id="exampleModalLabel">Let's figure out what works for you!</h4>
+
+                                <!-- Field type: "short" id: "1633920210" -->
+                                <fieldset>
+                                    <legend class="farter" for="1633920210">Name</legend>
+                                    <div class="form-group">
+                                        <input id="2005620554" type="text" name="entry.2005620554" class="form-control" required>
+                                    </div>
+                                </fieldset>
+    
+    
+                                <!-- Field type: "short" id: "227649005" -->
+                                <fieldset>
+                                    <legend class="farter" for="227649005">Email</legend>
+                                    <div class="form-group">
+                                        <input id="1045781291" type="text" name="entry.1045781291" class="form-control" required>
+                                    </div>
+                                </fieldset>
+    
+    
+                                <!-- Field type: "short" id: "1770822543" -->
+                                <!-- <fieldset>
+                                    <legend for="1770822543">Phone number</legend>
+                                    <div class="form-group">
+                                        <input id="1166974658" type="text" name="entry.1166974658" class="form-control">
+                                    </div>
+                                </fieldset> -->
+    
+    
+                                <!-- Field type: "paragraph" id: "1846923513" -->
+                                <fieldset>
+                                    <legend class="farter" for="1846923513">Comments</legend>
+                                    <div class="form-group">
+                                        <textarea id="839337160" name="entry.839337160" class="form-control" style="height:200px;font-size:14pt;"></textarea>
+                                    </div>
+                                </fieldset>
+    
+                                <input type="hidden" name="fvv" value="1">
+                                <input type="hidden" name="fbzx" value="-5650086590311247756">
+                                <!--
+          CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+          This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+          Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+          We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+      -->
+                                <input type="hidden" name="pageHistory" value="0">
+    
+                         <center> <input class="btn btn-primary atagbut" type="submit" value="Submit"> </center>    
+                            </form>
+    
+                            <img class="container1" src="images/footer.png" alt="footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+</html>
